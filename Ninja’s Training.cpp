@@ -82,10 +82,7 @@ int ninjaTraining(int n, vector<vector<int>> &points)
             }
             dummy[last] = maxi;
         }
-        for(int i=0; i<4; i++)
-        {
-            prev[i] = dummy[i];
-        }
+        prev = dummy;
     }
 
     return prev[3];
